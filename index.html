@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="">
+  <main class="h-screen w-screen flex justify-between flex-col sm:flex-row text-center sm:text-left">
+    <div class="sm:px-16 py-8">
+      <div class="px-8 mb-16">
+        <img src="./images/logo.svg" alt="logo" aria-hidden="true">
+      </div>
+
+      <div class="sm:hidden mb-16 sm:mb-0">
+        <picture class="">
+          <source media=" (min-width:500px)" srcset="./images/hero-desktop.jpg" aria-hidden="true">
+          <img src="./images/hero-mobile.jpg" alt="hero-desktop" aria-hidden="true"
+            class="object-cover object-top w-full max-h-80 sm:max-w-full sm:max-h-screen">
+        </picture>
+      </div>
+
+      <h1 class="uppercase text-7xl max-w-sm text-neutral wide mb-4 mx-auto sm:mx-0">
+        <span class="widest text-primary font-light">We're </span>
+        coming soon
+      </h1>
+      <p class="text-primary text-lg max-w-lg mb-16">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="flex justify-between border border-primary mx-auto max-w-sm sm:max-w-xl rounded-full pl-6">
+        <input id="email" type="text"
+          class="text-primary focus:outline-0 text-base sm:text-lg px-4 py-4 pb-3 w-1/2 sm:w-3/5"
+          placeholder="Email Address">
+        <div class="wrong-icon flex items-center hidden">
+          <img class="w-8 h-8" src="./images/icon-error.svg" alt="">
+        </div>
+        <button
+          class="bg-red-500 rounded-full w-32 gradient shadow-red-900/40 shadow-xl flex justify-center items-center hover:opacity-70"
+          value=""><img class="max-w-full text-center" src="./images/icon-arrow.svg" alt="icon-arrow"></button>
+      </form>
+      <div class="wrong-message px-4 pt-2 text-primary text-lg hidden">Please provide a valid email</div>
+    </div>
+    <div class="hidden sm:block">
+      <picture class="">
+        <source media=" (min-width:500px)" srcset="./images/hero-desktop.jpg" aria-hidden="true">
+        <img src="./images/hero-mobile.jpg" alt="hero-desktop" aria-hidden="true"
+          class="object-cover object-top w-full max-h-80 sm:max-w-full sm:max-h-screen">
+      </picture>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>

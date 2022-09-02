@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* ### Primary */
+
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* ### Gradients */
+
+/* 
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) 
+*/
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: light;
+}
+
+.widest{
+  letter-spacing: .25em;
+}
+
+.wide{
+  letter-spacing: .15em;
+}
+
+.text-primary{
+  color: var(--Desaturated-Red);
+
+}
+
+.text-neutral{
+  color: var(--Dark-Grayish-Red);
+}
+
+.border-primary{
+  border-color: var(--Desaturated-Red);
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--Desaturated-Red);
+  opacity: .5; /* Firefox */
+}
+
+.gradient{
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 73%, 53%)), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
